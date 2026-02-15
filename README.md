@@ -1,30 +1,27 @@
 Iris Predictor Web App
-Descrição
-Este projeto é um classificador de flores Iris utilizando PyTorch para o modelo de machine learning, FastAPI para o backend e HTML/JavaScript para o front-end.
-O aplicativo permite que o usuário insira as medidas de uma flor (Sepal e Petal) e receba:
-A classe prevista (setosa, versicolor ou virginica)
-Um gráfico mostrando a posição da nova amostra em relação ao dataset original
-O projeto também utiliza um scaler salvo (StandardScaler) para garantir que os dados do usuário sejam normalizados corretamente.
+Description
+This project is an Iris flower classifier using PyTorch for the machine learning model, FastAPI for the backend, and HTML/JavaScript for the front-end.
+The application allows users to enter the measurements of a flower (Sepal and Petal) and receive:
+The predicted class (setosa, versicolor, or virginica)
+A plot showing the position of the new sample relative to the original dataset
+The project also uses a saved StandardScaler to ensure that user input is correctly normalized.
 
-
-Tecnologias
+Technologies
 Python 3.10+
 PyTorch
-Scikit-learn (dataset Iris, StandardScaler)
-FastAPI
-Matplotlib (para gerar gráficos)
-HTML + JavaScript para front-end
+Scikit-learn (Iris dataset, StandardScaler)
 
-
-Como rodar localmente
-Clonar o repositório
-git clone https://github.com/seu-usuario/iris-predictor.git
+How to run locally
+Clone the repository
+git clone https://github.com/your-username/iris-predictor.git
 cd iris-predictor
-Criar um ambiente virtual e instalar dependências
+Create a virtual environment and install dependencies
 python -m venv venv
 source venv/bin/activate   # Linux/Mac
 venv\Scripts\activate      # Windows
 
 pip install -r requirements.txt
-Rodar a API FastAPI
+Run the FastAPI API
 uvicorn app:app --reload
+
+The API will be available at: http://127.0.0.1:8000
